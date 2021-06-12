@@ -1,18 +1,19 @@
 import React from 'react'
 import './index.css'
 
-import {Pie,Doughnut,PolarArea,Bar,Radar} from 'react-chartjs-2'
+import {Bar,Pie,Doughnut,PolarArea,Radar} from 'react-chartjs-2'
+
 
 const BarChart = () => {
     return (
         <div class="bar-chart">
-        <Bar
+        <Pie
             data={{
                 labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                 datasets: [
                     {
                         label: '# number of votes',
-                        data: [-5, 12, 19, 3, 5, 1, 3],
+                        data: [12, 19, 3, 5, 1, 3],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
@@ -42,18 +43,18 @@ const BarChart = () => {
             height={400}
             width={600}
             options = {{
+                // indexAxis: 'y',
                 maintainAspectRatio: false,
                 scales: {
-                     y: {
-                        min: -10,
-                        max: 50,
-                      },
+                    //  y: {
+                    //     max: 50,
+                    //   },
                 
-                    // yAxes: [
-                    //     {ticks: {
-                    //         beginAtZero: false
-                    //     }}
-                    // ],
+                    yAxes: [
+                        {ticks: {
+                            beginAtZero: false
+                        }}
+                    ],
                 }
             }}
         />
