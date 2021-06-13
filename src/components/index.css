@@ -1,7 +1,9 @@
 .bar-chart {
     width: 50%;
     margin:auto;
-    /* height: 50%; */
+    height: 200px;
+    background: green;
+    display: none;
 }
 
 @media screen and (max-width:767px) {

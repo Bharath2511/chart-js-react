@@ -1,13 +1,13 @@
 import React from 'react'
 import './index.css'
 
-import {Bar,Pie,Doughnut,PolarArea,Radar} from 'react-chartjs-2'
+import {Bar,Radar,Doughnut,PolarArea} from 'react-chartjs-2'
 
 
 const BarChart = () => {
     return (
         <div class="bar-chart">
-        <Pie
+        <Bar
             data={{
                 labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                 datasets: [
@@ -50,11 +50,11 @@ const BarChart = () => {
                     //     max: 50,
                     //   },
                 
-                    yAxes: [
-                        {ticks: {
-                            beginAtZero: false
-                        }}
-                    ],
+                    // yAxes: [
+                    //     {ticks: {
+                    //         beginAtZero: false
+                    //     }}
+                    // ],
                 }
             }}
         />
