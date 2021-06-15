@@ -3,13 +3,6 @@ import ReactFlow,{Controls} from 'react-flow-renderer';
 
 import './flowindex.css';
 
-var w = window.innerWidth;
-var h = window.innerHeight;
-
-if(w <= 767) {
-  console.log(w,h);
-
-}
 
 
 const elements = [
@@ -128,7 +121,7 @@ const onLoad = (reactFlowInstance) => {
 
 const OverviewFlow = () => {
 return (<div className="flow-chart">
-    <ReactFlow elements={elements}  onLoad={onLoad} snapToGrid={true} snapGrid={[15, 15]} >
+    <ReactFlow elements={elements}  onLoad={onLoad} snapToGrid={true} snapGrid={[15, 15]} nodesDraggable={false} >
     <Controls />
     </ReactFlow>
 </div>)

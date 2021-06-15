@@ -1,7 +1,8 @@
 import React from 'react'
 import './index.css'
 
-import {Bar,Radar,Doughnut,PolarArea} from 'react-chartjs-2'
+import {Bar,Radar,Doughnut,PolarArea,Pie,Line,defaults} from 'react-chartjs-2'
+
 
 
 const BarChart = () => {
@@ -40,22 +41,51 @@ const BarChart = () => {
                     // }
                 ]
             }}
-            height={400}
-            width={600}
+            // height={400}
+            // width={600}
             options = {{
-                // indexAxis: 'y',
+                plugins: {
+                    chartAreaBorder: {
+                        display: false
+                    },
+                    legend: {
+                        display: false,
+                        labels: {
+                            color: 'rgb(255, 99, 132)'
+                        }
+                    }
+                },
+                indexAxis: 'y',
                 maintainAspectRatio: false,
                 scales: {
-                    //  y: {
-                    //     max: 50,
-                    //   },
+
+                     x: {
+                         ticks: {
+                             display: false,
+                         },
+                         grid: {
+                             display: false,
+                             drawBorder: false
+                         }
+                     },
+        
+                     y: {
+                        ticks: {
+                            display: false,
+                        },
+                        grid: {
+                            display: false,
+                            drawBorder: false
+                        },
+                      },
                 
                     // yAxes: [
                     //     {ticks: {
                     //         beginAtZero: false
                     //     }}
                     // ],
-                }
+                },
+            
             }}
         />
         </div>

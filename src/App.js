@@ -4,13 +4,14 @@ import BarChart from './components/BarChart';
 import OverviewFlow from './components/OverviewFlow';
 import UseState from './components/UseState';
 import UseEffect from './components/UseEffect';
+import CustmonNodeExample from './components/CustomNodeExample';
 
 const App = () => {
-  return <div>
+  return  <div>
     <BarChart />
-    <OverviewFlow />
-    <UseEffect />
   </div>
-}
+  
+  }
+
 
 export default App;
