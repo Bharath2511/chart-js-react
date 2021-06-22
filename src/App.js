@@ -5,11 +5,12 @@ import OverviewFlow from './components/OverviewFlow';
 import UseState from './components/UseState';
 import UseEffect from './components/UseEffect';
 
+import ComA from './components/UseContext/ComA';
+
+
 const App = () => {
   return <div>
-    <BarChart />
-    <OverviewFlow />
-    <UseEffect />
+    <ComA />
   </div>
 }
 

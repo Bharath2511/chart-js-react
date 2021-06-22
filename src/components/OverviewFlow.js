@@ -50,7 +50,10 @@ const elements = [
       background: '#D6D5E6',
       color: '#333',
       border: '1px solid #222138',
-      width: 180,
+      width: 50,
+      height: 50,
+      borderRadius: '50%',
+      fontSize: 10
     },
   },
   {
@@ -126,9 +129,10 @@ const onLoad = (reactFlowInstance) => {
 };
 
 
+
 const OverviewFlow = () => {
 return (<div className="flow-chart">
-    <ReactFlow elements={elements}  onLoad={onLoad} snapToGrid={true} snapGrid={[15, 15]} >
+    <ReactFlow elements={elements} onLoad={onLoad} snapToGrid={true} snapGrid={[15, 15]} >
     <Controls />
     </ReactFlow>
 </div>)
